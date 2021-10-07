@@ -3,7 +3,7 @@
 // use this for Valine Javascript.
 'use strict';
 
-// 2. Variabla(Mutable)
+// 2. Variabla(Mutable) r/w(read, write)
 // let (added in ES6)
 let globalName = 'global name';
 {	let name = 'dongdu';
@@ -22,7 +22,10 @@ let globalName = 'global name';
 };
 console.log(age); 
 
-// 3. Constants(Immutable)
+// 3. Constant(Immutable) r(read only)
+// Note!
+// Immutable data types: primitive types, frozen objects ( )
+// Mutable data types: all objects by defalt are mutable in JS
 // 값을 한 번 선언한 후 웬만하면 바꾸지 않게 하라
 // - 보안상의 이유(security)
 // - 동시에 값을 변경하지 못하게 함(thread safety)
@@ -31,7 +34,7 @@ const daysInWeek = 7;
 const maxNumber = 5;
 
 // 4. Variable types
-// primitive, single item: number, string, boolean, null, undefined, symbol
+// primitive, single item: number, string, boolean, null, undefined, symbol (값 자체)
 // object, box container
 // function, first-class function
 const count = 17; // integer(정수)

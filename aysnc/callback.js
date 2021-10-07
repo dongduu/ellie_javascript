@@ -1,6 +1,6 @@
 'use strict'
 
-// 동기
+// 1. 동기와 비동기
 // 자바스크립트는 동기적.
 // hoisting이 된 이후부터 코드가 우리가 작성한 순서에 맞춰 실행됨
 // hoisting: var, function이 자동적으로 제일 위로 올라감
@@ -9,19 +9,19 @@ console.log(1); // 1
 setTimeout(() => console.log(2), 2000); // 4
 console.log(3); // 2
 
-// Synchronous callback(즉각적)
+// 2. Synchronous callback(즉각적)
 function printImmidiately (print) {
     print();
 }
 printImmidiately(() => console.log('hi')); // 3
 
-// Asynchronous callback(나중, 언제 실행될 지 모름)
+// 3. Asynchronous callback(나중, 언제 실행될 지 모름)
 function printWithDelay (print, timeout) {
     setTimeout(print, timeout);
 }
 printWithDelay (() => console.log('hello'), 4000); // 4
 
-// Callback Hell example
+// 4. Callback Hell example
 class UserStorage {
     loginUser (id, password, onSuccess, onError) {
         setTimeout(() => {
@@ -67,7 +67,7 @@ userStorage.loginUser(
     error => {console.log(error);}
     );
 
-// 콜백지옥의 문제점
+// 5. 콜백지옥의 문제점
 // 가독성이 떨어짐
 // 비지니스 로직을 한눈에 이해하기 어려움
 // 에러 발생이나 , 디버깅 시 어려움

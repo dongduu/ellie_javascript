@@ -103,3 +103,17 @@ const printNo = function () {
 randomQuiz('wrong', printYes, printNo);
 randomQuiz('love you', printYes, printNo);
 
+// Arrow function
+// 항상 anonymous
+const simplePrint = () => console.log('simple!');
+const add = (a, b) => a + b;
+const simplePrint2 = () => {
+    // do something more
+    return a * b;
+}
+
+// IIFE: Immidiately Invoked Function Expression
+// 바로 호출 가능
+(function hello() {
+    console.log('hello');
+})();
