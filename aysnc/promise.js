@@ -74,4 +74,3 @@ getHen ()
 // 원래 .then (hen => getEgg(hen)) but, 위처럼 생략 가능
     .catch (console.log);
 
-    
