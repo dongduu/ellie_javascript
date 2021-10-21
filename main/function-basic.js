@@ -16,3 +16,7 @@ function add (a, b) {
 const addFun = add;
 console.log(add);
 addFun(1, 2);
+
+function addNum (a, b) {
+    return sum;
+};
